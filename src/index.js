@@ -41,10 +41,10 @@ connectDB();
 // (async () => {
 //   try {
 //     const connectionInstance = await mongoose.connect(
-//       `${process.env.MONGODB_URI}/${DB_NAME}?retryWrites=true&w=majority`
+//       `${process.env.MONGODB_URI}/${DB_NAME}`
 //     );
 
-//     console.log(connectionInstance);
+//     console.log(connectionInstance.connection.host);
 
 //     app.on("Error", (error) => {
 //       console.log("App Is Not Listening. Error : ", error);
